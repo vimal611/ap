@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/button_red"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_blue"
+        android:layout_alignStart="@id/button_yellow"
+        android:layout_alignEnd="@id/button_yellow"
+        android:text="RED" />
+    <Button
+        android:id="@+id/button_blue"
+        android:textSize="16dp"
+        android:onClick="changeToBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/button_yellow"
+        android:layout_alignStart="@id/button_yellow"
+        android:layout_alignEnd="@id/button_yellow"
+        android:text="BLUE" />
+    <Button
+        android:id="@+id/button_yellow"
+        android:onClick="changeToYellow"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="YELLOW" />
+    <Button
+        android:id="@+id/button_white"
+        android:layout_width="wrap_content"
+        android:onClick="changeToWhite"
+        android:textSize="16dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_yellow"
+        android:layout_centerHorizontal="true"
+        android:layout_alignStart="@id/button_yellow"
+        android:layout_alignEnd="@id/button_yellow"
+        android:text="WHITE" />
+
+</RelativeLayout>
