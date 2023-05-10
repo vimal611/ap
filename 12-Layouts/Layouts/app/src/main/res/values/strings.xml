@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Layouts</string>
+    <string-array name="spinner_values_relativelayout">
+        <item>Linear Layout</item>
+        <item>Relative Layout</item>
+        <item>Grid Layout</item>
+    </string-array>
+</resources>

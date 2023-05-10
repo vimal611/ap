@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_relativelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="Relative Layout" />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@id/spinner_relativelayout"
+        android:layout_marginRight="30dp"
+        android:text="Select layout:"
+        android:textColor="#F44336"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner_relativelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_relativelayout"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/text_view"
+        android:entries="@array/spinner_values_relativelayout" />
+
+    <Button
+        android:id="@+id/button_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:onClick="onClickNextRelative"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Select layout and click next:)"
+        android:layout_below="@id/button_relativelayout"
+        android:textColor="#FF5722" />
+
+</RelativeLayout>
