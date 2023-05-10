@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".TextColorChangeFragment"
+    android:orientation="vertical"
+    android:background="#A5A5A5">
+
+    <TextView
+        android:id="@+id/textChangeColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The color of this text can be changed"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textColor="#F4511E" />
+
+    <Spinner
+        android:id="@+id/spinner_text_colors"
+        android:entries="@array/colors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginVertical="10dp"/>
+
+    <Button
+        android:id="@+id/button_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change text color"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
